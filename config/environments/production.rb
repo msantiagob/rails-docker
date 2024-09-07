@@ -64,6 +64,7 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "my_rails_app_production"
 
   config.action_mailer.perform_caching = false
+  config.hosts << "api.sonmyd.com"
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -80,12 +81,12 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Enable DNS rebinding protection and other `Host` header attacks.
-   config.hosts = [
-    "rails-docker-production.up.railway.app",     # Allow requests from example.com
-   /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`
-   "api.sonmyd.com",
-   /.*\.api.sonmyd\.com/,
-  ]
+  #  config.hosts = [
+  #   "rails-docker-production.up.railway.app",     # Allow requests from example.com
+  #  /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`
+  #  "api.sonmyd.com",
+  #  /.*\.api.sonmyd\.com/,
+  # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 end
