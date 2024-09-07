@@ -78,19 +78,13 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-    config.hosts << "api.sonmyd.com"
+
   # Enable DNS rebinding protection and other `Host` header attacks.
    config.hosts = [
-     "rails-docker-production.up.railway.app",     # Allow requests from example.com
-    /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`
-    "railways.sonmyd.com",
-    /.*\.railways.sonmyd.com\.com/,
-    "test.sonmyd.com.com",
-    /.*\.test.sonmyd.com\.com/,
-    "api.sonmyd.com",
-    /.*\.api.sonmyd\.com/,
-    "railsapi-93f78afd67cf.herokuapp.com",
-    /.*\.railsapi-93f78afd67cf.herokuapp\.com/,
+    "rails-docker-production.up.railway.app",     # Allow requests from example.com
+   /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`
+   "api.sonmyd.com",
+   /.*\.api.sonmyd\.com/,
   ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }

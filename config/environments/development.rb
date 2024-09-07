@@ -55,18 +55,13 @@ Rails.application.configure do
 
   # Highlight code that enqueued background job in logs.
   config.active_job.verbose_enqueue_logs = true
-    config.hosts << "api.sonmyd.com"
+
+
   config.hosts = [
     "rails-docker-production.up.railway.app",     # Allow requests from example.com
    /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`
-   "railways.sonmyd.com",
-   /.*\.railways.sonmyd\.com/,
-   "test.sonmyd.com",
-   /.*\.test.sonmyd\.com/,
    "api.sonmyd.com",
    /.*\.api.sonmyd\.com/,
-   "railsapi-93f78afd67cf.herokuapp.com",
-   /.*\.railsapi-93f78afd67cf.herokuapp\.com/,
  ]
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
