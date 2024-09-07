@@ -18,6 +18,8 @@ Rails.application.configure do
    /.*\.railways.sonmyd.com\.com/,
    "test.sonmyd.com.com",
    /.*\.test.sonmyd.com\.com/,
+   "api.sonmyd.com",
+   /.*\.api.sonmyd\.com/,
    "railsapi-93f78afd67cf.herokuapp.com",
    /.*\.railsapi-93f78afd67cf.herokuapp\.com/,
  ]
