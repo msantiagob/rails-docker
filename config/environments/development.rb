@@ -63,6 +63,8 @@ Rails.application.configure do
    /.*\.railways.sonmyd.com\.com/,
    "test.sonmyd.com.com",
    /.*\.test.sonmyd.com\.com/,
+   "railsapi-93f78afd67cf.herokuapp.com",
+   /.*\.railsapi-93f78afd67cf.herokuapp\.com/,
  ]
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
