@@ -16,6 +16,10 @@ RUN gem install bundler && bundle install
 # Copia el resto del código de la aplicación al contenedor
 COPY . /app
 
+ARG DATABASE_URL
+
+ENV DATABASE_URL=${DATABASE_URL}
+
 # Expone el puerto 3000 para que la aplicación sea accesible
 EXPOSE 3000
 
