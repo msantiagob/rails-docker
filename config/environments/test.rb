@@ -18,6 +18,8 @@ Rails.application.configure do
    /.*\.railways.sonmyd.com\.com/,
    "test.sonmyd.com.com",
    /.*\.test.sonmyd.com\.com/,
+   "railsapi-93f78afd67cf.herokuapp.com",
+   /.*\.railsapi-93f78afd67cf.herokuapp\.com/,
  ]
   # Eager loading loads your entire application. When running a single test locally,
   # this is usually not necessary, and can slow down your test suite. However, it's

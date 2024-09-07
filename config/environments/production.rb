@@ -87,6 +87,8 @@ Rails.application.configure do
     /.*\.railways.sonmyd.com\.com/,
     "test.sonmyd.com.com",
     /.*\.test.sonmyd.com\.com/,
+    "railsapi-93f78afd67cf.herokuapp.com",
+    /.*\.railsapi-93f78afd67cf.herokuapp\.com/,
   ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
