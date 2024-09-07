@@ -78,7 +78,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+    config.hosts << "api.sonmyd.com"
   # Enable DNS rebinding protection and other `Host` header attacks.
    config.hosts = [
      "rails-docker-production.up.railway.app",     # Allow requests from example.com

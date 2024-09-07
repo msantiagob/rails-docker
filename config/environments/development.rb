@@ -55,7 +55,7 @@ Rails.application.configure do
 
   # Highlight code that enqueued background job in logs.
   config.active_job.verbose_enqueue_logs = true
-
+    config.hosts << "api.sonmyd.com"
   config.hosts = [
     "rails-docker-production.up.railway.app",     # Allow requests from example.com
    /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`

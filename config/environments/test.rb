@@ -10,7 +10,7 @@ Rails.application.configure do
 
   # While tests run files are not watched, reloading is not necessary.
   config.enable_reloading = false
-
+    config.hosts << "api.sonmyd.com"
   config.hosts = [
     "rails-docker-production.up.railway.app",     # Allow requests from example.com
    /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`
