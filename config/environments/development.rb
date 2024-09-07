@@ -60,9 +60,11 @@ Rails.application.configure do
     "rails-docker-production.up.railway.app",     # Allow requests from example.com
    /.*\.rails-docker-production.up.railway\.app/, # Allow requests from subdomains like `www.example.com`
    "railways.sonmyd.com",
-   /.*\.railways.sonmyd.com\.com/,
-   "test.sonmyd.com.com",
-   /.*\.test.sonmyd.com\.com/,
+   /.*\.railways.sonmyd\.com/,
+   "test.sonmyd.com",
+   /.*\.test.sonmyd\.com/,
+   "api.sonmyd.com",
+   /.*\.api.sonmyd\.com/,
    "railsapi-93f78afd67cf.herokuapp.com",
    /.*\.railsapi-93f78afd67cf.herokuapp\.com/,
  ]
